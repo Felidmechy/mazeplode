@@ -1,7 +1,7 @@
 #include "menustate.h"
 #include "gamestate.h"
 #include "imgui/imgui.h"
-
+#include "console.h"
 
 void CMenuState::setup()
 {
@@ -74,7 +74,7 @@ void CMenuState::draw()
 		pGameState->m_pUDPMan = m_pUDPMan;
 
 		pGameState->m_bHosting = true;
-		memcpy(pGameState->console.username, m_sUserName, sizeof(m_sUserName));
+		memcpy(pGameState->console->username, m_sUserName, sizeof(m_sUserName));
 		memcpy(pGameState->m_sPort, m_sHostPort, sizeof(m_sHostPort));
 
 		m_pApp->ChangeState(pGameState);
@@ -101,7 +101,7 @@ void CMenuState::draw()
 					pGameState->m_pUDPMan = m_pUDPMan;
 
 					pGameState->m_bHosting = false;
-					memcpy(pGameState->console.username, m_sUserName, sizeof(m_sUserName));
+					memcpy(pGameState->console->username, m_sUserName, sizeof(m_sUserName));
 
 					m_pApp->ChangeState(pGameState);
 				}

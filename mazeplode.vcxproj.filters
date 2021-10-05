@@ -52,6 +52,9 @@
     <ClCompile Include="src\gamestate.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\console.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -129,6 +132,9 @@
       <Filter>src\imgui</Filter>
     </ClInclude>
     <ClInclude Include="src\gamestate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\console.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

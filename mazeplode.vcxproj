@@ -181,6 +181,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\basestate.cpp" />
+    <ClCompile Include="src\console.cpp" />
     <ClCompile Include="src\gamestate.cpp" />
     <ClCompile Include="src\imgui\imgui.cpp" />
     <ClCompile Include="src\imgui\imgui_demo.cpp" />
@@ -208,6 +209,7 @@
     <ClInclude Include="..\..\..\addons\ofxNetwork\src\ofxUDPManager.h" />
     <ClInclude Include="..\..\..\addons\ofxNetwork\src\ofxUDPSettings.h" />
     <ClInclude Include="src\basestate.h" />
+    <ClInclude Include="src\console.h" />
     <ClInclude Include="src\gamestate.h" />
     <ClInclude Include="src\imgui\imconfig.h" />
     <ClInclude Include="src\imgui\imgui.h" />
